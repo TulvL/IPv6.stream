@@ -7,13 +7,13 @@ Speedtest Collection for IPv6
 https://IPv6.stream  
 
 自有节点：  
-https://euserv.ipv6.stream/  
-https://jp.webhorizon.ipv6.stream/  
-https://sg.webhorizon.ipv6.stream/  
-https://justhost.ipv6.stream/  
-https://hosterlabs.ipv6.stream/  
-https://cloudflare.ipv6.stream/  
-https://racknerd.ipv6.stream/  
+https://euserv.ipv6.stream  
+https://jp.webhorizon.ipv6.stream  
+https://sg.webhorizon.ipv6.stream  
+https://justhost.ipv6.stream  
+https://hosterlabs.ipv6.stream  
+https://cloudflare.ipv6.stream  
+https://racknerd.ipv6.stream  
 
 如有兴趣加入、扩充，可通过 Issue、Pull request 提交  
   
