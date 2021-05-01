@@ -19,8 +19,14 @@
         gtag('config', 'G-HECGG6V8YM');
     </script>
     <style>
-        th, td {
+        th,
+        td {
             vertical-align: middle
+        }
+
+        p {
+            margin-top: 0;
+            margin-bottom: 0;
         }
     </style>
 </head>
@@ -44,7 +50,7 @@
             <div class="row">
                 <div class="col-lg-6 col-md-8 mx-auto">
                     <h1 class="fw-light py-lg-5 py-3">IPv6 测速聚合站</h1>
-                    <p class="">测试 IPv6 支持情况 <a target="_blank" href="https://www.test-ipv6.com/">网站1</a> <a
+                    <p class="">检查 IPv6 支持情况： <a target="_blank" href="https://www.test-ipv6.com/">网站1</a> <a
                             target="_blank" href="https://www.ipv6-test.com/">网站2</a>
                     </p>
                 </div>
@@ -56,8 +62,8 @@
                         <thead>
                             <tr>
                                 <th scope="col">#</th>
+                                <th scope="col">服务商</th>
                                 <th scope="col">地区</th>
-                                <th scope="col">提供商</th>
                                 <th scope="col">/32 前缀</th>
                                 <th scope="col">测速</th>
                                 <th scope="col">备注</th>
@@ -66,8 +72,9 @@
                         <tbody>
                             <tr>
                                 <th scope="row">1</th>
-                                <td>US-LAX</td>
+
                                 <td>RackNerd</td>
+                                <td>US-LAX</td>
                                 <td>2607:f130::</td>
                                 <td><a href="http://racknerd.ipv6.stream/">HTTP</a>
                                     <a href="https://racknerd.ipv6.stream/">HTTPS</a>
@@ -76,8 +83,8 @@
                             </tr>
                             <tr>
                                 <th scope="row">2</th>
-                                <td>CA</td>
                                 <td>HOSTERLABS</td>
+                                <td>CA</td>
                                 <td>2607:5300::</td>
                                 <td><a href="http://hosterlabs.ipv6.stream/">HTTP</a>
                                     <a href="https://hosterlabs.ipv6.stream/">HTTPS</a>
@@ -86,8 +93,8 @@
                             </tr>
                             <tr>
                                 <th scope="row">3</th>
-                                <td>DE</td>
                                 <td>EUserv</td>
+                                <td>DE</td>
                                 <td>2a02:0180::</td>
                                 <td><a href="http://euserv.ipv6.stream/">HTTP</a>
                                     <a href="https://euserv.ipv6.stream/">HTTPS</a>
@@ -96,8 +103,8 @@
                             </tr>
                             <tr>
                                 <th scope="row">4</th>
+                                <td rowspan="2">WebHorizon</td>
                                 <td>JP</td>
-                                <td>WebHorizon</td>
                                 <td>2404:f780::</td>
                                 <td><a href="http://jp.webhorizon.ipv6.stream/">HTTP</a>
                                     <a href="https://jp.webhorizon.ipv6.stream/">HTTPS</a>
@@ -107,7 +114,6 @@
                             <tr>
                                 <th scope="row">5</th>
                                 <td>SG</td>
-                                <td>WebHorizon</td>
                                 <td>2402:1f00::</td>
                                 <td><a href="http://sg.webhorizon.ipv6.stream/">HTTP</a>
                                     <a href="https://sg.webhorizon.ipv6.stream/">HTTPS</a>
@@ -116,8 +122,8 @@
                             </tr>
                             <tr>
                                 <th scope="row">6</th>
-                                <td>RU</td>
                                 <td>JustHost</td>
+                                <td>RU</td>
                                 <td>2a00:b700::</td>
                                 <td><a href="http://justhost.ipv6.stream/">HTTP</a>
                                     <a href="https://justhost.ipv6.stream/">HTTPS</a>
@@ -126,12 +132,13 @@
                             </tr>
                             <tr>
                                 <th scope="row">7</th>
+                                <td>Cloudflare</td>
                                 <td>N/A</td>
-                                <td colspan="2">Cloudflare CDN</td>
+                                <td>CDN</td>
                                 <td><a href="http://cloudflare.ipv6.stream/">HTTP</a>
                                     <a href="https://cloudflare.ipv6.stream/">HTTPS</a>
                                 </td>
-                                <td>双栈，含 CDN-源站 延迟</td>
+                                <td>有回源延迟　双栈</td>
                             </tr>
                         </tbody>
                     </table>
@@ -144,8 +151,8 @@
                         <thead>
                             <tr>
                                 <th scope="col">#</th>
+                                <th scope="col">服务商</th>
                                 <th scope="col">地区</th>
-                                <th scope="col">提供商</th>
                                 <th scope="col">/32 前缀</th>
                                 <th scope="col">测速</th>
                                 <th scope="col">备注</th>
@@ -169,23 +176,40 @@
                         <thead>
                             <tr>
                                 <th scope="col">#</th>
+                                <th scope="col">服务商</th>
                                 <th scope="col">地区</th>
-                                <th scope="col">提供商</th>
-                                <th scope="col">/32 前缀</th>
+                                <th scope="col">前缀</th>
                                 <th scope="col">站点</th>
                                 <th scope="col">备注</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <th scope="row" rowspan="2">1</th>
-                                <td rowspan="2">N/A</td>
-                                <td rowspan="2">Vultr</td>
+                                <th scope="row">0</th>
+                                <td>中国电信</td>
+                                <td>N/A</td>
                                 <td>
-                                    <p>2001:19f0::</p>
+                                    <p>240e::/18</p>
                                 </td>
                                 <td>
-                                    
+
+                                   
+
+                                        <a target="_blank" href="https://ipms.chinatelecomglobal.com/public/lookglass/lookglassDisclaimer.html">LOOKING GLASS</a>
+                                      
+
+                                </td>
+                                <td>/</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" rowspan="2">1</th>
+                                <td rowspan="2">Vultr</td>
+                                <td rowspan="2">N/A</td>
+                                <td>
+                                    <p>2001:19f0::/32</p>
+                                </td>
+                                <td>
+
                                     <p>
                                         <a target="_blank" href="https://fra-de-ipv6.vultr.com/">fra-de</a>
                                         <a target="_blank" href="https://ams-nl-ipv6.vultr.com/">ams-nl</a>
@@ -206,7 +230,7 @@
                                         <a target="_blank" href="https://wa-us-ipv6.vultr.com/">wa-us</a>
                                     </p>
                                     <p>
-                                        
+
                                         <a target="_blank" href="https://tx-us-ipv6.vultr.com/">tx-us</a>
                                         <a target="_blank" href="https://sjo-ca-us-ipv6.vultr.com/">sjo-ca-us</a>
                                         <a target="_blank" href="https://lax-ca-us-ipv6.vultr.com/">lax-ca-us</a>
@@ -218,16 +242,131 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <p>2401:c080::</p>
+                                    <p>2401:c080::/32</p>
                                 </td>
                                 <td>
-                  
-                                        <a target="_blank" href="https://sel-kor-ipv6.vultr.com/">sel-kor</a>
+
+                                    <a target="_blank" href="https://sel-kor-ipv6.vultr.com/">sel-kor</a>
 
                                 </td>
                                 <td>/</td>
                             </tr>
-                         
+                            <tr>
+                                <th scope="row" rowspan="3">2</th>
+
+                                <td rowspan="3">Linode</td>
+                                <td>US</td>
+                                <td>
+                                    <p>2600:3c00::/28</p>
+                                </td>
+                                <td>
+
+                                    <p>
+                                        <a target="_blank" href="http://speedtest.newark.linode.com">newark</a>
+                                        <a target="_blank" href="http://speedtest.dallas.linode.com/">dallas</a>
+                                        <a target="_blank" href="http://speedtest.toronto1.linode.com/">toronto1</a>
+
+                                    </p>
+                                    <p>
+                                        <a target="_blank" href="http://speedtest.atlanta.linode.com/">atlanta</a>
+                                        <a target="_blank" href="http://speedtest.fremont.linode.com/">fremont</a>
+                                    </p>
+
+                                </td>
+                                <td rowspan="3">双栈</td>
+                            </tr>
+                            <tr>
+                                <td>AP</td>
+                                <td>
+                                    <p>2400:8900::/29</p>
+                                </td>
+                                <td>
+                                    <a target="_blank" href="http://speedtest.singapore.linode.com/">singapore</a>
+                                    <a target="_blank" href="http://speedtest.mumbai1.linode.com/">mumbai1</a>
+                                    <a target="_blank" href="http://speedtest.syd1.linode.com/">syd1</a>
+                                    <a target="_blank" href="http://speedtest.tokyo2.linode.com/">tokyo2</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>EU</td>
+                                <td>
+                                    <p>2a01:7e00::/31</p>
+                                </td>
+                                <td>
+                                    <a target="_blank" href="http://speedtest.london.linode.com/">london</a>
+                                    <a target="_blank" href="http://speedtest.frankfurt.linode.com/">frankfurt</a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row" rowspan="3">3</th>
+
+                                <td rowspan="3">DigitalOcean</td>
+                                <td>US</td>
+                                <td>
+                                    <p>2604:a880::/32</p>
+                                </td>
+                                <td>
+
+                                    <p>
+                                        <a target="_blank" href="http://speedtest-nyc1.digitalocean.com/">NYC1</a>
+                                        <a target="_blank" href="http://speedtest-nyc2.digitalocean.com/">NYC2</a>
+                                        <a target="_blank" href="http://speedtest-nyc3.digitalocean.com/">NYC3</a>
+
+                                    </p>
+                                    <p>
+                                        <a target="_blank" href="http://speedtest-sfo1.digitalocean.com/">SFO1</a>
+                                        <a target="_blank" href="http://speedtest-sfo2.digitalocean.com/">SFO2</a>
+                                        <a target="_blank" href="http://speedtest-sfo3.digitalocean.com/">SFO3</a>
+                                    </p>
+                                    <p>
+                                        <a target="_blank" href="http://speedtest-tor1.digitalocean.com/">TOR1</a>
+                                    </p>
+                                </td>
+                                <td rowspan="3">双栈</td>
+                            </tr>
+                            <tr>
+                                <td>EU</td>
+                                <td>
+                                    <p>2a03:b0c0::/32</p>
+                                </td>
+                                <td>
+                                    <a target="_blank" href="http://speedtest-ams2.digitalocean.com/">AMS2</a>
+                                    <a target="_blank" href="http://speedtest-ams2.digitalocean.com/">AMS3</a>
+                                    <a target="_blank" href="http://speedtest-lon1.digitalocean.com/">LON1</a>
+                                    <a target="_blank" href="http://speedtest-fra1.digitalocean.com/">FRA1</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>AP</td>
+                                <td>
+                                    <p>2400:6180::/32</p>
+                                </td>
+                                <td>
+                                    <a target="_blank" href="http://speedtest-sgp1.digitalocean.com/">SGP1</a>
+                                    <a target="_blank" href="http://speedtest-blr1.digitalocean.com/">BLR1</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">4</th>
+                                <td>BuyVM</td>
+                                <td>N/A</td>
+                                <td>
+                                    <p>2605:6400::/32</p>
+                                </td>
+                                <td>
+
+                                    <p>
+                                        <a target="_blank" href="https://speedtest.lv.buyvm.net/">LV</a>
+                                        <a target="_blank" href="https://speedtest.ny.buyvm.net/">NY</a>
+                                        <a target="_blank" href="https://speedtest.lu.buyvm.net/">Lux</a>
+                                        
+                                    </p>
+                                   
+
+                                </td>
+                                <td>双栈</td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
