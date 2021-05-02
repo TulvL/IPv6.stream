@@ -29,6 +29,8 @@
             margin-bottom: 0;
         }
     </style>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+      <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
 </head>
 
 <body>
@@ -50,7 +52,8 @@
             <div class="row">
                 <div class="col-lg-6 col-md-8 mx-auto">
                     <h1 class="fw-light py-lg-5 py-3">IPv6 测速聚合站</h1>
-                    <p class="">检查 IPv6 支持情况： <a target="_blank" href="https://www.test-ipv6.com/">网站1</a> <a
+                    </p>
+                    <p class="mt-2">检查本地 IPv6 支持情况： <a target="_blank" href="https://www.test-ipv6.com/">网站1</a> <a
                             target="_blank" href="https://www.ipv6-test.com/">网站2</a>
                     </p>
                 </div>
@@ -62,7 +65,7 @@
                         <thead>
                             <tr>
                                 <th scope="col">#</th>
-                                <th scope="col">服务商</th>
+                                <th scope="col">ISP</th>
                                 <th scope="col">地区</th>
                                 <th scope="col">/32 前缀</th>
                                 <th scope="col">测速</th>
@@ -70,11 +73,12 @@
                             </tr>
                         </thead>
                         <tbody>
+
                             <tr>
                                 <th scope="row">1</th>
 
                                 <td>RackNerd</td>
-                                <td>US-LAX</td>
+                                <td>US LAX</td>
                                 <td>2607:f130::</td>
                                 <td><a href="http://racknerd.ipv6.stream/">HTTP</a>
                                     <a href="https://racknerd.ipv6.stream/">HTTPS</a>
@@ -94,8 +98,8 @@
                             <tr>
                                 <th scope="row">3</th>
                                 <td>Scaleway</td>
-                                <td>AMS</td>
-                                <td>2001:bc8::</td>
+                                <td>NL</td>
+                                <td>2001:0bc8::</td>
                                 <td><a href="http://scaleway.ipv6.stream/">HTTP</a>
                                     <a href="https://scaleway.ipv6.stream/">HTTPS</a>
                                 </td>
@@ -113,25 +117,6 @@
                             </tr>
                             <tr>
                                 <th scope="row">5</th>
-                                <td rowspan="2">WebHorizon</td>
-                                <td>JP</td>
-                                <td>2404:f780::</td>
-                                <td><a href="http://jp.webhorizon.ipv6.stream/">HTTP</a>
-                                    <a href="https://jp.webhorizon.ipv6.stream/">HTTPS</a>
-                                </td>
-                                <td rowspan="2">廉价 NAT + IPv6 机</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">6</th>
-                                <td>SG</td>
-                                <td>2402:1f00::</td>
-                                <td><a href="http://sg.webhorizon.ipv6.stream/">HTTP</a>
-                                    <a href="https://sg.webhorizon.ipv6.stream/">HTTPS</a>
-                                </td>
-                           
-                            </tr>
-                            <tr>
-                                <th scope="row">7</th>
                                 <td>JustHost</td>
                                 <td>RU</td>
                                 <td>2a00:b700::</td>
@@ -141,29 +126,85 @@
                                 <td>/</td>
                             </tr>
                             <tr>
+                                <th scope="row">6</th>
+                                <td rowspan="3">WebHorizon</td>
+                                <td>JP</td>
+                                <td>2404:f780::</td>
+                                <td><a href="http://jp.webhorizon.ipv6.stream/">HTTP</a>
+                                    <a href="https://jp.webhorizon.ipv6.stream/">HTTPS</a>
+                                </td>
+                                <td rowspan="3">廉价 NAT + IPv6 机</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">7</th>
+                                <td>SG</td>
+                                <td>2402:1f00::</td>
+                                <td><a href="http://sg.webhorizon.ipv6.stream/">HTTP</a>
+                                    <a href="https://sg.webhorizon.ipv6.stream/">HTTPS</a>
+                                </td>
+
+                            </tr>
+                            <tr>
                                 <th scope="row">8</th>
+                                <td>CN HK</td>
+                                <td>2001:0470::</td>
+                                <td><a href="http://hk.webhorizon.ipv6.stream/">HTTP</a>
+                                    <a href="https://hk.webhorizon.ipv6.stream/">HTTPS</a>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <th scope="row">9</th>
                                 <td>Cloudflare</td>
                                 <td>/</td>
-                                <td>/</td>
+                                <td>2606:4700::</td>
                                 <td><a href="http://cloudflare.ipv6.stream/">HTTP</a>
                                     <a href="https://cloudflare.ipv6.stream/">HTTPS</a>
                                 </td>
                                 <td>CDN 有回源延迟；双栈</td>
                             </tr>
+
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+            <div class="row py-3">
+                <div class="col-lg-8 col-md-12 mx-auto table-responsive">
+                    <h2 class="fw-light py-lg-5 py-3">友情提供节点</h2>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">ISP</th>
+                                <th scope="col">地区</th>
+                                <th scope="col">/32 前缀</th>
+                                <th scope="col">测速</th>
+                                <th scope="col">提供者</th>
+                                <th scope="col">备注</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td colspan="6">暂无</td>
+
+                            </tr>
+
                         </tbody>
                     </table>
                 </div>
             </div>
             <div class="row py-3">
-                <div class="col-lg-8 col-md-12 mx-auto">
+                <div class="col-lg-8 col-md-12 mx-auto table-responsive">
                     <h2 class="fw-light py-lg-5 py-3">其他测速节点</h2>
                     <table class="table">
                         <thead>
                             <tr>
                                 <th scope="col">#</th>
-                                <th scope="col">服务商</th>
+                                <th scope="col">运营者</th>
                                 <th scope="col">地区</th>
-                                <th scope="col">/32 前缀</th>
+                                <th scope="col">前缀</th>
                                 <th scope="col">测速</th>
                                 <th scope="col">备注</th>
                             </tr>
@@ -171,22 +212,99 @@
                         <tbody>
                             <tr>
                                 <th scope="row">1</th>
-                                <td colspan="5">暂无</td>
-
+                                <td>中科大</td>
+                                <td>CN AH</td>
+                                <td>2001:da8:d800::/48</td>
+                                <td><a target="_blank" href="http://test6.ustc.edu.cn/">HTTP</a>
+                                    <a target="_blank" href="https://test6.ustc.edu.cn/">HTTPS</a>
+                                </td>
+                                <td>/</td>
                             </tr>
-
+                            <tr>
+                                <th scope="row">2</th>
+                                <td rowspan="2">上海交大</td>
+                                <td rowspan="2">CN SH</td>
+                                <td rowspan="2">2001:da8:8000::/48</td>
+                                <td><a target="_blank" href="http://wsus.sjtu.edu.cn/speedtest/">HTTP</a>
+                                    <a target="_blank" href="https://wsus.sjtu.edu.cn/speedtest/">HTTPS</a>
+                                </td>
+                                <td>双栈</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td><a target="_blank" href="http://ftp6.sjtu.edu.cn/speedtest/">HTTP</a>
+                                    <a target="_blank" href="https://ftp6.sjtu.edu.cn/speedtest/">HTTPS</a>
+                                </td>
+                                <td>/</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">4</th>
+                                <td>东北大学</td>
+                                <td>CN LN</td>
+                                <td>2001:da8:9000::/48</td>
+                                <td><a target="_blank" href="http://speed.neu6.edu.cn/">HTTP</a>
+                                    <a target="_blank" href="https://speed.neu6.edu.cn/">HTTPS</a>
+                                </td>
+                                <td>/</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">5</th>
+                                <td>speedtest6</td>
+                                <td>JP</td>
+                                <td>2001:02e8::/32</td>
+                                <td><a target="_blank" href="http://ipv6.speedtest6.com/">HTTP</a>
+                                </td>
+                                <td>/</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">6</th>
+                                <td>iNonius</td>
+                                <td>JP</td>
+                                <td>2405:f000::/32</td>
+                                <td><a target="_blank" href="https://inonius.net/speedtest/">HTTPS</a>
+                                </td>
+                                <td>部分浏览器不显示；双单栈</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">7</th>
+                                <td>uebi</td>
+                                <td>AT</td>
+                                <td>2a00:15c0::/32</td>
+                                <td><a target="_blank" href="http://speedtest.tools.uebi.net/">HTTP</a>
+                                </td>
+                                <td>双栈</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">8</th>
+                                <td>xfinity</td>
+                                <td>US</td>
+                                <td>2001:558::/29</td>
+                                <td><a target="_blank" href="https://speedtest.xfinity.com/">HTTPS</a>
+                                </td>
+                                <td>双栈</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">9</th>
+                                <td>quickline</td>
+                                <td>CH</td>
+                                <td>2001:1a88::/29</td>
+                                <td><a target="_blank" href="http://speedtest.quickline.com/">HTTP</a>
+                                    <a target="_blank" href="https://speedtest.quickline.com/">HTTPS</a>
+                                </td>
+                                <td>双单栈</td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
             </div>
             <div class="row py-3">
-                <div class="col-lg-8 col-md-12 mx-auto">
+                <div class="col-lg-8 col-md-12 mx-auto table-responsive">
                     <h2 class="fw-light py-lg-5 py-3">官方 Looking Glass</h2>
                     <table class="table">
                         <thead>
                             <tr>
                                 <th scope="col">#</th>
-                                <th scope="col">服务商</th>
+                                <th scope="col">ISP</th>
                                 <th scope="col">地区</th>
                                 <th scope="col">前缀</th>
                                 <th scope="col">站点</th>
@@ -203,10 +321,12 @@
                                 </td>
                                 <td>
 
-                                   
 
-                                        <a target="_blank" href="https://ipms.chinatelecomglobal.com/public/lookglass/lookglassDisclaimer.html">LOOKING GLASS</a>
-                                      
+
+                                    <a target="_blank"
+                                        href="https://ipms.chinatelecomglobal.com/public/lookglass/lookglassDisclaimer.html">LOOKING
+                                        GLASS</a>
+
 
                                 </td>
                                 <td>/</td>
@@ -370,15 +490,36 @@
                                         <a target="_blank" href="https://speedtest.lv.buyvm.net/">LV</a>
                                         <a target="_blank" href="https://speedtest.ny.buyvm.net/">NY</a>
                                         <a target="_blank" href="https://speedtest.lu.buyvm.net/">Lux</a>
-                                        
+
                                     </p>
-                                   
+
 
                                 </td>
                                 <td>双栈</td>
                             </tr>
                         </tbody>
                     </table>
+                </div>
+                <p class="mt-3">"双栈"表示域名同时支持 IPv4 和 IPv6 ，浏览器会按照 <a target="_blank"
+                    href="https://en.wikipedia.org/wiki/Happy_Eyeballs">某些规则</a> 自动选择协议
+            </p>
+            </div>
+            
+            <div class="row py-3">
+                <div class="col-lg-8 col-md-12 mx-auto">
+                    <h2 class="fw-light py-lg-5 py-3">反馈区</h2>
+                    <div id="gitalk-container"></div>
+                    <script>const gitalk = new Gitalk({
+                        clientID: 'd41e44f55d44d0a1c8e9',
+                        clientSecret: 'b474a5370c357be1139fdabc427ea8b3f24e7e3c',
+                        repo: 'IPv6.stream',   
+                        owner: 'TulvL',
+                        admin: ['TulvL'],
+                        id: location.pathname,    
+                        distractionFreeMode: false  
+                      })
+                      
+                      gitalk.render('gitalk-container')</script>
                 </div>
             </div>
         </section>
@@ -393,6 +534,7 @@
             </p>
             <p class="mb-1"> 如有兴趣加入、扩充，可在 <a target="_blank" href="https://github.com/TulvL/IPv6.stream">Github</a> 交流
             </p>
+            <p>测速程序基于 <a href="https://github.com/BadApple9/speedtest-x" target="_blank">speedtest-x</a> 项目</p>
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
