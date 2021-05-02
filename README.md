@@ -15,6 +15,9 @@ https://hosterlabs.ipv6.stream
 https://cloudflare.ipv6.stream  
 https://racknerd.ipv6.stream  
 
+2021/5/2 新增  
+https://scaleway.ipv6.stream  
+
 如有兴趣加入、扩充，可通过 Issue、Pull request 提交  
   
 如希望本站子域名解析也可提出（被指向站点不应有测速无关内容）    
