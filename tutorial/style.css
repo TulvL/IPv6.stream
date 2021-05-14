@@ -1,0 +1,33 @@
+h1,
+h2,
+h3 {
+    padding-bottom: .3em;
+    margin-top: 32px;
+    margin-bottom: 16px;
+    line-height: 1.25;
+}
+
+h1 {
+    border-bottom: 1px solid #eaeaea;
+    font-size: 2em;
+}
+
+h2 {
+    border-bottom: 1px solid #eaeaea;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 1.25em;
+    font-weight: 600;
+}
+
+pre {
+    padding: 0 1em;
+    color: #6a737d;
+    border-left: .25em solid #dfe2e5;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+    
