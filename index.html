@@ -8,7 +8,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 
-    <title>IPv6.stream 测速聚合站</title>
+    <title>IPv6.stream 测试聚合站</title>
+    <meta name="description" content="自建并收集各类支持 IPv6 的测速和测试站点">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-HECGG6V8YM"></script>
     <script>
@@ -28,14 +29,14 @@
             margin-top: 0;
             margin-bottom: 0;
         }
-        
-        .gt-container{
+
+        .gt-container {
             text-align: left !important;
         }
-        
+
     </style>
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
-      <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+    <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
 </head>
 
 <body>
@@ -44,7 +45,7 @@
         <div class="navbar navbar-dark bg-dark shadow-sm">
             <div class="container">
                 <a href="#" class="navbar-brand d-flex align-items-center">
-                    <img class="me-2" src="./logo.png" height="30"/><strong>IPv6.stream</strong>
+                    <img class="me-2" src="./logo.png" height="30" /><strong>IPv6.stream</strong>
                 </a>
 
             </div>
@@ -74,7 +75,7 @@
                                 <th scope="col">地区</th>
                                 <th scope="col">/32 前缀</th>
                                 <th scope="col">测速</th>
-                                <th scope="col">备注</th>
+                                <th scope="col" style="min-width:8em">备注</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -85,53 +86,63 @@
                                 <td>RackNerd</td>
                                 <td>US LAX</td>
                                 <td>2607:f130::</td>
-                                <td><a href="http://racknerd.ipv6.stream/">HTTP</a>
-                                    <a href="https://racknerd.ipv6.stream/">HTTPS</a>
+                                <td><a target="_blank" href="http://racknerd.ipv6.stream/">HTTP</a>
+                                    <a target="_blank" href="https://racknerd.ipv6.stream/">HTTPS</a>
                                 </td>
                                 <td>/</td>
                             </tr>
                             <tr>
                                 <th scope="row">2</th>
-                                <td>HosterLabs</td>
-                                <td>CA</td>
-                                <td>2607:5300::</td>
-                                <td><a href="http://hosterlabs.ipv6.stream/">HTTP</a>
-                                    <a href="https://hosterlabs.ipv6.stream/">HTTPS</a>
+                                <td>Cloudflare</td>
+                                <td>/</td>
+                                <td>2606:4700::</td>
+                                <td><a target="_blank" href="http://cloudflare.ipv6.stream/">HTTP</a>
+                                    <a target="_blank" href="https://cloudflare.ipv6.stream/">HTTPS</a>
                                 </td>
-                                <td>IPv6 Only 机</td>
+                                <td>双栈；CDN 有回源延迟</td>
                             </tr>
                             <tr>
                                 <th scope="row">3</th>
-                                <td>Scaleway</td>
-                                <td>NL</td>
-                                <td>2001:0bc8::</td>
-                                <td><a href="http://scaleway.ipv6.stream/">HTTP</a>
-                                    <a href="https://scaleway.ipv6.stream/">HTTPS</a>
+                                <td>HosterLabs</td>
+                                <td>CA</td>
+                                <td>2607:5300::</td>
+                                <td><a target="_blank" href="http://hosterlabs.ipv6.stream/">HTTP</a>
+                                    <a target="_blank" href="https://hosterlabs.ipv6.stream/">HTTPS</a>
                                 </td>
-                                <td>释放 IPv4 成为 IPv6 Only</td>
+                                <td>IPv6 Only</td>
                             </tr>
                             <tr>
                                 <th scope="row">4</th>
+                                <td>Scaleway</td>
+                                <td>NL</td>
+                                <td>2001:0bc8::</td>
+                                <td><a target="_blank" href="http://scaleway.ipv6.stream/">HTTP</a>
+                                    <a target="_blank" href="https://scaleway.ipv6.stream/">HTTPS</a>
+                                </td>
+                                <td>IPv6 Only</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">5</th>
                                 <td>EUserv</td>
                                 <td>DE</td>
                                 <td>2a02:0180::</td>
-                                <td><a href="http://euserv.ipv6.stream/">HTTP</a>
-                                    <a href="https://euserv.ipv6.stream/">HTTPS</a>
+                                <td><a target="_blank" href="http://euserv.ipv6.stream/">HTTP</a>
+                                    <a target="_blank" href="https://euserv.ipv6.stream/">HTTPS</a>
                                 </td>
                                 <td>免费机</td>
                             </tr>
                             <tr>
-                                <th scope="row">5</th>
+                                <th scope="row">6</th>
                                 <td>JustHost</td>
                                 <td>RU</td>
                                 <td>2a00:b700::</td>
-                                <td><a href="http://justhost.ipv6.stream/">HTTP</a>
-                                    <a href="https://justhost.ipv6.stream/">HTTPS</a>
+                                <td><a target="_blank" href="http://justhost.ipv6.stream/">HTTP</a>
+                                    <a target="_blank" href="https://justhost.ipv6.stream/">HTTPS</a>
                                 </td>
                                 <td>/</td>
                             </tr>
                             <tr>
-                                <th scope="row">6</th>
+                                <th scope="row">7</th>
                                 <td rowspan="3">WebHorizon</td>
                                 <td>JP</td>
                                 <td>2404:f780::</td>
@@ -141,7 +152,7 @@
                                 <td rowspan="2">廉价 NAT + IPv6 机</td>
                             </tr>
                             <tr>
-                                <th scope="row">7</th>
+                                <th scope="row">8</th>
                                 <td>SG</td>
                                 <td>2402:1f00::</td>
                                 <td><a href="http://sg.webhorizon.ipv6.stream/">HTTP</a>
@@ -150,7 +161,7 @@
 
                             </tr>
                             <tr>
-                                <th scope="row">8</th>
+                                <th scope="row">9</th>
                                 <td>CN HK</td>
                                 <td>2001:0470::</td>
                                 <td><a href="http://hk.webhorizon.ipv6.stream/">HTTP</a>
@@ -159,16 +170,8 @@
                                 <td rowspan="1">廉价 NAT，IPv6 为 HE 隧道</td>
 
                             </tr>
-                            <tr>
-                                <th scope="row">9</th>
-                                <td>Cloudflare</td>
-                                <td>/</td>
-                                <td>2606:4700::</td>
-                                <td><a href="http://cloudflare.ipv6.stream/">HTTP</a>
-                                    <a href="https://cloudflare.ipv6.stream/">HTTPS</a>
-                                </td>
-                                <td>CDN 有回源延迟；双栈</td>
-                            </tr>
+
+
 
                         </tbody>
                     </table>
@@ -200,6 +203,7 @@
                         </tbody>
                     </table>
                 </div>
+                <p class="mt-3"><a target="_blank" href="./tutorial/">节点搭建教程</a> </p>
             </div>
             <div class="row py-3">
                 <div class="col-lg-8 col-md-12 mx-auto table-responsive">
@@ -507,29 +511,31 @@
                     </table>
                 </div>
                 <p class="mt-3">"双栈"表示域名同时支持 IPv4 和 IPv6 ，浏览器会按照 <a target="_blank"
-                    href="https://en.wikipedia.org/wiki/Happy_Eyeballs">某些规则</a> 自动选择协议
-            </p>
+                        href="https://en.wikipedia.org/wiki/Happy_Eyeballs">某些规则</a> 自动选择协议
+                </p>
             </div>
-            
+
             <div class="row py-3">
                 <div class="col-lg-8 col-md-12 mx-auto">
                     <h2 class="fw-light py-lg-5 py-3">反馈区</h2>
                     <div id="gitalk-container"></div>
-                    <script>const gitalk = new Gitalk({
-                        clientID: 'd41e44f55d44d0a1c8e9',
-                        clientSecret: 'b474a5370c357be1139fdabc427ea8b3f24e7e3c',
-                        repo: 'IPv6.stream',   
-                        title: '首页反馈区',
-                        body: '此处联动首页的反馈区',
-                        owner: 'TulvL',
-                        admin: ['TulvL'],
-                        id: location.pathname,    
-                        distractionFreeMode: false  
-                      })
-                      
-                      gitalk.render('gitalk-container')</script>
+                    <script>
+                        const gitalk = new Gitalk({
+                            clientID: 'd41e44f55d44d0a1c8e9',
+                            clientSecret: 'b474a5370c357be1139fdabc427ea8b3f24e7e3c',
+                            repo: 'IPv6.stream',
+                            title: '首页反馈区',
+                            body: '此处联动首页的反馈区',
+                            owner: 'TulvL',
+                            admin: ['TulvL'],
+                            id: "/",
+                            distractionFreeMode: false
+                        })
+
+                        gitalk.render('gitalk-container')</script>
                 </div>
-                <p class="mt-3">也可直接在 <a href="https://github.com/TulvL/IPv6.stream/issues/" target="_blank">Issue 页面</a> 回帖</p> 
+                <p class="mt-3">也可直接在 <a href="https://github.com/TulvL/IPv6.stream/issues/" target="_blank">Issue
+                        页面</a> 回帖</p>
             </div>
         </section>
 

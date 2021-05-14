@@ -18,12 +18,14 @@ https://racknerd.ipv6.stream
 2021/5/2 新增  
 https://scaleway.ipv6.stream  
 
-2021/5/3 新增  
+2021/5/4 新增 
 https://hk.webhorizon.ipv6.stream  
  
    
 ## 其他节点
+  
+[节点搭建教程](https://ipv6.stream/tutorial/)  
 
 如有兴趣加入、扩充，可通过 [Issue](https://github.com/TulvL/IPv6.stream/issues/new?assignees=&labels=&template=------.md&title=%E6%96%B0%E7%AB%99%E7%82%B9%E6%8F%90%E4%BA%A4) 提交  
   
-如希望本站子域名解析也可提出（被指向站点不应有测速无关内容）    
+本站可提供子域名    
