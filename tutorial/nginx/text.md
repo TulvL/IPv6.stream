@@ -51,7 +51,7 @@ net.ipv6.conf.eth0.use_tempaddr=0
 从而禁止意外的自动地址配置  
 
 ### 域名  
-以下是本文示例使用的域名和地址，操作时请记得替换：  
+以下是本文示例用的域名和地址，操作时请记得替换：  
   
 示例域名    example.ipv6.stream  
 示例IP地址  2001:db8::1  
@@ -62,7 +62,7 @@ net.ipv6.conf.eth0.use_tempaddr=0
 ```
 2001:db8::1 example.ipv6.stream
 ```
-解析完成后建议删除此记录  
+提出申请、解析完成后建议删除此记录  
 
 
 ## HTTP 配置  
@@ -168,7 +168,7 @@ systemctl restart nginx
 本教程使用 certbot 申请，acme.sh 可参考 [Apache 教程](../apache#acmesh)   
 
 ### certbot 
-使用前可先参考[官方网站](https://certbot.eff.org/lets-encrypt/debianbuster-nginx)   
+使用前可先参考 [官方网站](https://certbot.eff.org/lets-encrypt/debianbuster-nginx)   
 
 逐条输入以下命令完成安装  
 ```
@@ -191,7 +191,7 @@ certbot --nginx
 
 certbot 默认会给 80 配置指向 443 的跳转  
 如不需要，可以把 /etc/nginx/sites-available/speedtest 中监听 80 的部分恢复原状  
-并重启 nginx  
+并重启 Nginx  
 ```
 systemctl restart nginx
 ```

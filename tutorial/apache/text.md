@@ -50,7 +50,7 @@ net.ipv6.conf.eth0.use_tempaddr=0
 从而禁止意外的自动地址配置  
 
 ### 域名  
-以下是本文示例使用的域名和地址，操作时请记得替换：  
+以下是本文示例用的域名和地址，操作时请记得替换：  
   
 示例域名    example.ipv6.stream  
 示例IP地址  2001:db8::1  
@@ -61,7 +61,7 @@ net.ipv6.conf.eth0.use_tempaddr=0
 ```
 2001:db8::1 example.ipv6.stream
 ```
-解析完成后建议删除此记录  
+提出申请、解析完成后建议删除此记录  
 
 
 ## HTTP 配置  
@@ -116,7 +116,7 @@ const SAME_IP_MULTI_LOGS = true;
 ```
    
 ### Apache
-新建文件 /etc/apache2/sites-available/speedtest.conf
+新建文件 /etc/apache2/sites-available/speedtest.conf  
 写入：
 ```
 <VirtualHost *:80>
@@ -138,7 +138,7 @@ date.timezone = "PRC"
 ```
 （大约位于第 956 行，去掉注释）
 
-重启 apache  
+重启 Apache  
 ```
 systemctl restart apache2
 ```
@@ -155,7 +155,7 @@ systemctl restart apache2
 
 ### acme.sh 
 
-使用前可先参考[官方文档](https://github.com/acmesh-official/acme.sh)   
+使用前可先参考 [官方文档](https://github.com/acmesh-official/acme.sh)   
 
 获取并安装  
 ```
@@ -173,6 +173,7 @@ acme.sh --issue  -d example.ipv6.stream   --apache
 新建证书目录并安装
 ```
 mkdir /var/ssl/
+
 acme.sh --install-cert -d example.ipv6.stream \
 --cert-file      /var/ssl/cert.pem  \
 --key-file      /var/ssl/key.pem  \
@@ -208,7 +209,7 @@ a2ensite speedtest-ssl.conf
 ```
 
 
-重启 apache  
+重启 Apache  
 ```
 systemctl restart apache2
 ```
