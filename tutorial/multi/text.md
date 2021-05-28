@@ -220,7 +220,7 @@ date.timezone = "PRC"
 systemctl restart apache2
 ```
 
-如无报错，打开域名 http://example.ipv6.stream 、http://1.example.ipv6.stream 、 http://2.example.ipv6.stream、 http://3.example.ipv6.stream 应能显示出测速页面  
+如无报错，打开域名 http://example.ipv6.stream 、http://1.example.ipv6.stream 、 http://2.example.ipv6.stream 、 http://3.example.ipv6.stream 应能显示出测速页面  
 检查上下行测速、记录是否正常工作  
 
 至此 HTTP 部分已经配置完成。  
