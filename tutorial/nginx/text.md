@@ -1,6 +1,8 @@
 # IPv6 测速节点搭建教程（Nginx 版）
 
 本教程使用 Nginx 作为网络服务器，Apache 版见 [这里](../apache)  
+  
+还有多 IP 服务器的 [教程](../multi)   
 
 如使用 Docker 可能需要更高配置，本教程暂不涉及  
 
@@ -139,11 +141,6 @@ server {
         fastcgi_pass unix:/run/php/php7.4-fpm.sock;
     }
 }
-```
-
-以上是 IPv6 单栈的配置，如希望建设双栈站点则可加上
-```
-    listen 80;
 ```
    
 启用网站  

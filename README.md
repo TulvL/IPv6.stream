@@ -20,7 +20,11 @@ https://scaleway.ipv6.stream
 
 2021/5/3 新增  
 https://hk.webhorizon.ipv6.stream  
- 
+
+2021/5/28 新增  
+https://akkocloud.ipv6.stream:886  
+三线 IPv6 地址解析，可供验证最长前缀匹配机制  
+  
    
 ## 其他节点
   
@@ -28,4 +32,4 @@ https://hk.webhorizon.ipv6.stream
 
 如有兴趣加入、扩充，可通过 [Issue](https://github.com/TulvL/IPv6.stream/issues/new?assignees=&labels=&template=------.md&title=%E6%96%B0%E7%AB%99%E7%82%B9%E6%8F%90%E4%BA%A4) 提交  
   
-本站可提供子域名    
+本站可提供子域名      
