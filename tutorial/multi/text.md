@@ -312,7 +312,7 @@ a2ensite speedtest-ssl.conf
 systemctl restart apache2
 ```
 
-如无报错，打开域名 https://example.ipv6.stream 、https://1.example.ipv6.stream 、 https://2.example.ipv6.stream、 https://3.example.ipv6.stream 应能显示出测速页面  
+如无报错，打开域名 https://example.ipv6.stream 、https://1.example.ipv6.stream 、 https://2.example.ipv6.stream 、 https://3.example.ipv6.stream 应能显示出测速页面  
 
 至此 HTTPS 部分已经配置完成。  
 
