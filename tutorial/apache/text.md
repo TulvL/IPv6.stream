@@ -134,11 +134,11 @@ const SAME_IP_MULTI_LOGS = true;
 a2ensite speedtest.conf
 ```
 
-如果希望记录的时间与北京时间保持一致，可在 /etc/php/7.4/apache2/php.ini 中配置时区：
+如果希望记录的时间与北京时间保持一致，可在 /etc/php/7.4/apache2/php.ini 中配置时区：  
 ```
 date.timezone = "PRC"
 ```
-（大约位于第 962 行，去掉注释）
+（目录中的版本号可能有所不同；大约位于第 962 行，去掉注释）
 
 重启 Apache  
 ```
