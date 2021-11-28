@@ -6,7 +6,7 @@ function load_text(name) {
     request.onload = function () {
         if (request.status == 200) {
             var text = request.responseText;
-            document.getElementById('content').innerHTML = marked(text);
+            document.getElementById('content').innerHTML = marked.parse(text);
             hash = window.location.hash;
             window.location.hash = ""
             window.location.hash = hash;
