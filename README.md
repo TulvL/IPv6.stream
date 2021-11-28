@@ -11,7 +11,6 @@ https://euserv.ipv6.stream
 https://jp.webhorizon.ipv6.stream  
 https://sg.webhorizon.ipv6.stream  
 https://justhost.ipv6.stream  
-https://hosterlabs.ipv6.stream  
 https://cloudflare.ipv6.stream  
 https://racknerd.ipv6.stream  
 
