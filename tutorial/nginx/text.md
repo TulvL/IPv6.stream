@@ -73,7 +73,7 @@ net.ipv6.conf.eth0.use_tempaddr=0
 
 ```
 apt update  
-apt install php php-fpm unzip vim curl
+apt install php php-fpm unzip vim curl nginx
 ```
 
 如果机器已经装有 apache2 可能会引发冲突，可予以关闭  
