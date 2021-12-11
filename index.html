@@ -99,7 +99,7 @@
                                 <td><a target="_blank" href="http://racknerd.ipv6.stream/">HTTP</a>
                                     <a target="_blank" href="https://racknerd.ipv6.stream/">HTTPS</a>
                                 </td>
-                                <td>单栈解析</td>
+                                <td>/</td>
                             </tr>
                             <tr>
                                 <th scope="row">2</th>
@@ -109,7 +109,7 @@
                                 <td><a target="_blank" href="http://cloudflare.ipv6.stream/">HTTP</a>
                                     <a target="_blank" href="https://cloudflare.ipv6.stream/">HTTPS</a>
                                 </td>
-                                <td>双栈解析；CDN 有回源延迟</td>
+                                <td>CDN 可能有回源延迟</td>
                             </tr>
                             <tr>
                                 <th scope="row">3</th>
@@ -119,7 +119,7 @@
                                 <td><a target="_blank" href="http://scaleway.ipv6.stream/">HTTP</a>
                                     <a target="_blank" href="https://scaleway.ipv6.stream/">HTTPS</a>
                                 </td>
-                                <td>单栈解析；IPv6 Only 机</td>
+                                <td>IPv6 Only 机</td>
                             </tr>
                             <tr>
                                 <th scope="row">4</th>
@@ -129,7 +129,7 @@
                                 <td><a target="_blank" href="http://euserv.ipv6.stream/">HTTP</a>
                                     <a target="_blank" href="https://euserv.ipv6.stream/">HTTPS</a>
                                 </td>
-                                <td>单栈解析；免费机</td>
+                                <td>免费机</td>
                             </tr>
                             <tr>
                                 <th scope="row">5</th>
@@ -139,7 +139,7 @@
                                 <td><a target="_blank" href="http://justhost.ipv6.stream/">HTTP</a>
                                     <a target="_blank" href="https://justhost.ipv6.stream/">HTTPS</a>
                                 </td>
-                                <td>单栈解析</td>
+                                <td>/</td>
                             </tr>
                             <tr>
                                 <th scope="row">6</th>
@@ -149,7 +149,7 @@
                                 <td><a target="_blank" href="http://jp.webhorizon.ipv6.stream/">HTTP</a>
                                     <a target="_blank" href="https://jp.webhorizon.ipv6.stream/">HTTPS</a>
                                 </td>
-                                <td rowspan="3">廉价 NAT + IPv6 机</td>
+                                <td rowspan="3">NAT + IPv6 机</td>
                             </tr>
                             <tr>
                                 <th scope="row">7</th>
@@ -198,6 +198,9 @@
 
                 </div>
                 <p class="mt-3">如未特别说明，皆为 AAAA 单栈解析</p>
+                 <p class="mt-1">"双栈"表示域名同时支持 IPv4 和 IPv6 ，浏览器会按照 <a target="_blank"
+                        href="https://en.wikipedia.org/wiki/Happy_Eyeballs">某些规则</a> 自动选择协议
+                </p>
             </div>
             <div class="row py-3">
                 <div class="col-lg-8 col-md-12 mx-auto table-responsive">
@@ -662,9 +665,7 @@
                         </tbody>
                     </table>
                 </div>
-                <p class="mt-3">"双栈"表示域名同时支持 IPv4 和 IPv6 ，浏览器会按照 <a target="_blank"
-                        href="https://en.wikipedia.org/wiki/Happy_Eyeballs">某些规则</a> 自动选择协议
-                </p>
+               
             </div>
             <div class="row py-3">
                 <div class="col-lg-8 col-md-12 mx-auto">
