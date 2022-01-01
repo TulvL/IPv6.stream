@@ -26,7 +26,11 @@ https://akkocloud.ipv6.stream:886
 
 2021/6/2 新增  
 https://oracle.ipv6.stream  
-  
+
+2022/1/1 新增  
+https://jp.aws.ipv6.stream  
+
+
    
 ## 其他节点
   
