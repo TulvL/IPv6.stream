@@ -135,7 +135,7 @@ server {
     listen [::]:80;
     server_name example.ipv6.stream;
     root /var/www/speedtest/;
-
+    client_max_body_size 100M;
     location ~ \.php$ {
         include snippets/fastcgi-php.conf;
         fastcgi_pass unix:/run/php/php7.4-fpm.sock;
