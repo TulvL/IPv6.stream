@@ -21,8 +21,8 @@ https://scaleway.ipv6.stream
 https://hk.webhorizon.ipv6.stream  
 
 2021/5/28 新增  
-~~https://akkocloud.ipv6.stream:886  
-三线 IPv6 地址解析，可供验证最长前缀匹配机制  ~~
+~~https://akkocloud.ipv6.stream:886   ~~
+~~三线 IPv6 地址解析，可供验证最长前缀匹配机制  ~~
 
 2021/6/2 新增  
 https://oracle.ipv6.stream  
