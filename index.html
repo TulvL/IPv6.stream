@@ -66,13 +66,13 @@
                     <script type="application/javascript">
                         var line4 = document.getElementById("ipv4");
                         var line6 = document.getElementById("ipv6");
-                        fetch('https://api4.ipify.org/')
+                        fetch('https://myip-4.ipv6.stream/')
                             .then(response => response.text())
                             .then(function (text) {
                                 line4.innerHTML = "<a target='_blank' href='https://bgp.tools/prefix/"+ text +"'>" + text +'</a>';
                             })
                             .catch(() => { line4.innerHTML = '------' });
-                        fetch('https://api6.ipify.org/')
+                        fetch('https://myip-6.ipv6.stream/')
                             .then(response => response.text())
                             .then(function (text) {
                                 line6.innerHTML = "<a target='_blank' href='https://bgp.tools/prefix/"+ text +"'>" + text +'</a>';
