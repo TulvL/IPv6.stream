@@ -7,7 +7,7 @@ Speedtest Collection for IPv6
 https://IPv6.stream  
 
 ## 自有节点
-https://euserv.ipv6.stream  
+~~https://euserv.ipv6.stream~~  
 https://jp.webhorizon.ipv6.stream  
 https://sg.webhorizon.ipv6.stream  
 https://justhost.ipv6.stream  
