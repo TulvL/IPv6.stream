@@ -7,37 +7,11 @@ Speedtest Collection for IPv6
 https://IPv6.stream  
 
 ## 自有节点
-~~https://euserv.ipv6.stream~~  
-https://jp.webhorizon.ipv6.stream  
-https://sg.webhorizon.ipv6.stream  
-https://justhost.ipv6.stream  
-https://cloudflare.ipv6.stream  
 https://racknerd.ipv6.stream  
-
-2021/5/2 新增  
+https://cloudflare.ipv6.stream  
 https://scaleway.ipv6.stream  
-
-2021/5/3 新增  
-https://hk.webhorizon.ipv6.stream  
-
-2021/5/28 新增  
-~~https://akkocloud.ipv6.stream:886~~  
-~~三线 IPv6 地址解析，可供验证最长前缀匹配机制~~  
-
-2021/6/2 新增  
 https://oracle.ipv6.stream  
-
-2022/1/1 新增  
-~~https://jp.aws.ipv6.stream~~  
-
-2022/1/4 新增  
-~~https://ca.webdock.ipv6.stream~~  
-~~https://fi.webdock.ipv6.stream~~  
-
-2022/3/5 新增  
-~~https://cloudfront.ipv6.stream~~   
-
-  
+ 
    
    
 ## 其他节点
